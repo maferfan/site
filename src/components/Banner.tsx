@@ -7,6 +7,7 @@ import image from '../assets/imageMinha.jpg'
 import { useRef, useState } from 'react'
 import jsPDF from 'jspdf'
 import html2canvas from 'html2canvas'
+import { RotatingLines } from 'react-loader-spinner'
 
 
 
@@ -14,6 +15,7 @@ export const Banner = () => {
     const [loader, setLoader] = useState<boolean>(false)
     const PDF = "http://localhost:3000/Currículo-Matheus-ATUAL.pdf"
     const downloadPDF = (url: string) => {
+        setLoader(true)
         const filename = url.split('/').pop()
         const pdfDownload = document.createElement('a')
         pdfDownload.href = url
@@ -23,6 +25,7 @@ export const Banner = () => {
         document.body.appendChild(pdfDownload)
         pdfDownload.click()
         pdfDownload.remove()
+        setLoader(false)
     }
 
     return (
@@ -55,7 +58,11 @@ export const Banner = () => {
                                 </div>
                             </div>
                             <div>
-                                <button className='hover:text-gray-500 transition-all duration-300' onClick={() => {downloadPDF(PDF)}} disabled={!(loader === false)}>{loader ? <span>Baixando</span> : <div className='flex items-center gap-x-2'><FaFilePdf /><span>
+                                <button className='hover:text-gray-500 transition-all duration-300' onClick={() => {downloadPDF(PDF)}} disabled={!(loader === false)}>{loader ? <span className='flex items-center gap-x-2'> <RotatingLines strokeColor="black"
+                                            strokeWidth="5"
+                                            animationDuration="0.75"
+                                            width="15"
+                                            visible={true}/> Baixando</span> : <div className='flex items-center gap-x-2'><FaFilePdf /><span>
                                     Curriculum</span></div>}</button>
                             </div>
                         </motion.div>
