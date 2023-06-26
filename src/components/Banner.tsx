@@ -1,29 +1,27 @@
-import { FaGithub, FaLinkedin, FaInstagram, FaVoicemail } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaInstagram, FaFilePdf } from 'react-icons/fa'
 import { TypeAnimation } from 'react-type-animation'
 import { motion } from 'framer-motion'
 import { fadeIn } from '../variants'
 import { BiLogoGmail } from 'react-icons/bi'
 import image from '../assets/imageMinha.jpg'
 import { useState } from 'react'
-import html2canvas from 'html2canvas'
-import jsPDF from 'jspdf'
+
 
 
 export const Banner = () => {
     const [loader, setLoader] = useState<boolean>(false)
 
     const downloadPDF = () => {
-        const element = document.getElementById('capture');
-        if (element) {
-            html2canvas(element).then((canvas) => {
-                const pdf = new jsPDF();
-                const imgData = canvas.toDataURL('image/png');
-                pdf.addImage(imgData, 'PNG', 0, 0, canvas.width, canvas.height);
-                pdf.save('Currículo-Matheus-ATUAL.pdf');
+        const link = document.createElement('a');
+        link.href = '../assets/Currículo-Matheus-ATUAL.pdf';
+        link.download = 'Currículo-Matheus-ATUAL.pdf';
 
-                setLoader(false);
-            });
-        }
+        link.style.display = 'none';
+        document.body.appendChild(link);
+
+        link.click();
+
+        document.body.removeChild(link);
     };
 
     return (
@@ -56,9 +54,8 @@ export const Banner = () => {
                                 </div>
                             </div>
                             <div id="capture">
-
-                                <button className='hover:text-gray-500 transition-all duration-300' onClick={downloadPDF} disabled={!(loader === false)}>{loader ? <span>Baixando</span> : <span>
-                                    curriculum</span>}</button>
+                                <button className='hover:text-gray-500 transition-all duration-300' onClick={downloadPDF} disabled={!(loader === false)}>{loader ? <span>Baixando</span> : <div className='flex items-center gap-x-2'><FaFilePdf /><span>
+                                    Curriculum</span></div>}</button>
                             </div>
                         </motion.div>
                         <motion.div variants={fadeIn('up', 0.5)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.7 }} className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
