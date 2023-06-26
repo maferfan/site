@@ -1,4 +1,4 @@
-import { AiFillPhone } from 'react-icons/ai'
+import { FaWhatsapp } from 'react-icons/fa'
 import imageLogo from '../assets/imageLogo.png'
 export const Header = () => {
 
@@ -10,10 +10,10 @@ export const Header = () => {
                         <img src={imageLogo} alt="Matheus Ferrazza logo" width={110} />
                     </a>
                     <div className='flex items-center gap-x-4 text-[15px]'>
-                        <a href="https://www.linkedin.com/in/matheus-ferrazza-52138219b/" className='hover:text-gray-500 transition-all duration-300'>
-                            Contact-me
+                        <a href="https://wa.me/47989025148" target='_blank' rel="noreferrer" className='hover:text-gray-500 transition-all duration-300'>
+                            Contact me
                         </a>
-                        <AiFillPhone className='text-[15px]' />
+                        <FaWhatsapp className='text-[15px] mt-1' />
                     </div>
                 </div>
             </div>
