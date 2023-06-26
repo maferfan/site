@@ -4,8 +4,28 @@ import { motion } from 'framer-motion'
 import { fadeIn } from '../variants'
 import { BiLogoGmail } from 'react-icons/bi'
 import image from '../assets/imageMinha.jpg'
+import { useState } from 'react'
+import html2canvas from 'html2canvas'
+import jsPDF from 'jspdf'
+
 
 export const Banner = () => {
+    const [loader, setLoader] = useState<boolean>(false)
+
+    const downloadPDF = () => {
+        const element = document.getElementById('capture');
+        if (element) {
+            html2canvas(element).then((canvas) => {
+                const pdf = new jsPDF();
+                const imgData = canvas.toDataURL('image/png');
+                pdf.addImage(imgData, 'PNG', 0, 0, canvas.width, canvas.height);
+                pdf.save('Currículo-Matheus-ATUAL.pdf');
+
+                setLoader(false);
+            });
+        }
+    };
+
     return (
         <section className="min-h-[85vh] lg:min-h-[78vh] flex items-center btn" id="home">
             <div className="container mx-auto">
@@ -31,11 +51,14 @@ export const Banner = () => {
                         <motion.div variants={fadeIn('up', 0.4)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.7 }} className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
                             <div className='text-gray-400'>
                                 <div className='flex items-center gap-x-2'>
-                                    <BiLogoGmail/>
+                                    <BiLogoGmail />
                                     <p>matheusferrazza@gmail.com</p>
                                 </div>
                             </div>
-                            <a href="https://github.com/maferfan?tab=repositories" className='hover:text-gray-500 transition-all duration-300'>My Portfolio</a>
+                            <div id="capture">
+
+                                <button className='hover:text-gray-500 transition-all duration-300' onClick={downloadPDF} disabled={!(loader === false)}>{loader ? <span>Baixando</span> : <span>My Portfolio</span>}</button>
+                            </div>
                         </motion.div>
                         <motion.div variants={fadeIn('up', 0.5)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.7 }} className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
                             <a href="https://github.com/maferfan" target='_blank' rel="noreferrer" className='hover:text-gray-500 transition-all duration-300'>
