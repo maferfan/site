@@ -29,12 +29,12 @@ export const Banner = () => {
                         </motion.div>
                         <motion.p variants={fadeIn('up', 0.3)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.7 }} className='mb-8 mx-auto lg:mx-0 lg:text-[20px] font-secondary'> Here you will find information about me such as contacts and my projects.</motion.p>
                         <motion.div variants={fadeIn('up', 0.4)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.7 }} className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
-                            <a href='https://mail.google.com/mail/u/0/?ogbl#inbox' target='_blank' rel="noreferrer" className='hover:text-gray-500 transition-all duration-300'>
+                            <div className='text-gray-400'>
                                 <div className='flex items-center gap-x-2'>
                                     <BiLogoGmail/>
-                                    <p>Email</p>
+                                    <p>matheusferrazza@gmail.com</p>
                                 </div>
-                            </a>
+                            </div>
                             <a href="https://github.com/maferfan?tab=repositories" className='hover:text-gray-500 transition-all duration-300'>My Portfolio</a>
                         </motion.div>
                         <motion.div variants={fadeIn('up', 0.5)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.7 }} className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
