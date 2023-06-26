@@ -4,25 +4,26 @@ import { motion } from 'framer-motion'
 import { fadeIn } from '../variants'
 import { BiLogoGmail } from 'react-icons/bi'
 import image from '../assets/imageMinha.jpg'
-import { useState } from 'react'
+import { useRef, useState } from 'react'
+import jsPDF from 'jspdf'
+import html2canvas from 'html2canvas'
 
 
 
 export const Banner = () => {
     const [loader, setLoader] = useState<boolean>(false)
-
-    const downloadPDF = () => {
-        const link = document.createElement('a');
-        link.href = '../assets/Currículo-Matheus-ATUAL.pdf';
-        link.download = 'Currículo-Matheus-ATUAL.pdf';
-
-        link.style.display = 'none';
-        document.body.appendChild(link);
-
-        link.click();
-
-        document.body.removeChild(link);
-    };
+    const PDF = "http://localhost:3000/Currículo-Matheus-ATUAL.pdf"
+    const downloadPDF = (url: string) => {
+        const filename = url.split('/').pop()
+        const pdfDownload = document.createElement('a')
+        pdfDownload.href = url
+        if(filename){
+            pdfDownload.setAttribute('download', filename)
+        }
+        document.body.appendChild(pdfDownload)
+        pdfDownload.click()
+        pdfDownload.remove()
+    }
 
     return (
         <section className="min-h-[85vh] lg:min-h-[78vh] flex items-center btn" id="home">
@@ -53,8 +54,8 @@ export const Banner = () => {
                                     <p>matheusferrazza@gmail.com</p>
                                 </div>
                             </div>
-                            <div id="capture">
-                                <button className='hover:text-gray-500 transition-all duration-300' onClick={downloadPDF} disabled={!(loader === false)}>{loader ? <span>Baixando</span> : <div className='flex items-center gap-x-2'><FaFilePdf /><span>
+                            <div>
+                                <button className='hover:text-gray-500 transition-all duration-300' onClick={() => {downloadPDF(PDF)}} disabled={!(loader === false)}>{loader ? <span>Baixando</span> : <div className='flex items-center gap-x-2'><FaFilePdf /><span>
                                     Curriculum</span></div>}</button>
                             </div>
                         </motion.div>
