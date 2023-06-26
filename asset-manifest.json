@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/site/static/css/main.2cfb9fd2.css",
+    "main.js": "/site/static/js/main.afc22738.js",
+    "static/js/787.dd4029b4.chunk.js": "/site/static/js/787.dd4029b4.chunk.js",
+    "static/media/petshop.png": "/site/static/media/petshop.73e198a1507d1338bf48.png",
+    "static/media/OLX.png": "/site/static/media/OLX.f119cef42a52ad1984ff.png",
+    "static/media/imageMinha2.png": "/site/static/media/imageMinha2.53d9856babff7425ece0.png",
+    "static/media/bibliotech.png": "/site/static/media/bibliotech.71f2287a0a510a6672bb.png",
+    "static/media/imageMinha.jpg": "/site/static/media/imageMinha.e6b7ef0ff11683e1852f.jpg",
+    "static/media/assistenteVirtual.png": "/site/static/media/assistenteVirtual.5962d409326a116eca95.png",
+    "static/media/IMC.png": "/site/static/media/IMC.b5c1ef0da5b9828b9f6a.png",
+    "static/media/fotoMinha3.png": "/site/static/media/fotoMinha3.478be70a005dcab57f75.png",
+    "static/media/memoryGame.png": "/site/static/media/memoryGame.4bfdebd26458bc9a7cf9.png",
+    "static/media/imageLogo.png": "/site/static/media/imageLogo.81e57d698724a0849eb2.png",
+    "static/media/ICON-REACT.svg": "/site/static/media/ICON-REACT.d8d3b7860253852b450c53ca188c3c4c.svg",
+    "static/media/ICON-MYSQL.svg": "/site/static/media/ICON-MYSQL.8e718067eeec4538fbb2e4491ea93f6f.svg",
+    "static/media/ICON-NODE.svg": "/site/static/media/ICON-NODE.d0cbe749d1e580b67549de16446b6dbc.svg",
+    "static/media/ICON-BOOTSTRAP.svg": "/site/static/media/ICON-BOOTSTRAP.d39bf87189674daf9c9e5e56f9780b37.svg",
+    "static/media/ICON-JS.svg": "/site/static/media/ICON-JS.860538c558c67b64010ff174f63c8e45.svg",
+    "static/media/ICON-TS.svg": "/site/static/media/ICON-TS.7987552b9fa308a9d7bfbc7fdea8b9b5.svg",
+    "static/media/ICON-FIREBASE.svg": "/site/static/media/ICON-FIREBASE.73bd61989b76e25734396b7b5f8adbea.svg",
+    "index.html": "/site/index.html",
+    "static/media/ICON-CSS.svg": "/site/static/media/ICON-CSS.a3b5b90755bcd71f713b42c7ea9c218f.svg",
+    "static/media/ICON-HTML.svg": "/site/static/media/ICON-HTML.94900c5f5b40e4d80b03991863f0b302.svg",
+    "main.2cfb9fd2.css.map": "/site/static/css/main.2cfb9fd2.css.map",
+    "main.afc22738.js.map": "/site/static/js/main.afc22738.js.map",
+    "787.dd4029b4.chunk.js.map": "/site/static/js/787.dd4029b4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2cfb9fd2.css",
+    "static/js/main.afc22738.js"
+  ]
+}
