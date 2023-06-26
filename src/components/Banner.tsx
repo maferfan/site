@@ -57,7 +57,8 @@ export const Banner = () => {
                             </div>
                             <div id="capture">
 
-                                <button className='hover:text-gray-500 transition-all duration-300' onClick={downloadPDF} disabled={!(loader === false)}>{loader ? <span>Baixando</span> : <span>My Portfolio</span>}</button>
+                                <button className='hover:text-gray-500 transition-all duration-300' onClick={downloadPDF} disabled={!(loader === false)}>{loader ? <span>Baixando</span> : <span>
+                                    curriculum</span>}</button>
                             </div>
                         </motion.div>
                         <motion.div variants={fadeIn('up', 0.5)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.7 }} className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
