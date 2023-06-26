@@ -6,9 +6,9 @@ export const Header = () => {
         <header className="py-8 btn">
             <div className="container mx-auto">
                 <div className="flex justify-between items-center">
-                    <a href="/">
+                    
                         <img src={imageLogo} alt="Matheus Ferrazza logo" width={110} />
-                    </a>
+                    
                     <div className='flex items-center gap-x-4 text-[15px]'>
                         <a href="https://wa.me/47989025148" target='_blank' rel="noreferrer" className='hover:text-gray-500 transition-all duration-300'>
                             Contact me
