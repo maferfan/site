@@ -2,10 +2,8 @@ import { skillsArray } from '../data/skills'
 import image from '../assets/fotoMinha3.png'
 import { motion } from 'framer-motion'
 import { fadeIn } from "../variants"
-import { useEffect, useState } from 'react'
 
 export const Services = () => {
-    const [currentIndex, setCurrentIndex] = useState(0);
 
     return (
         <div className="py-8 lg:py-24 lg:h-screen flex items-center bg-gray-100 btn" id="services">

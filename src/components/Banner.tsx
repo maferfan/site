@@ -34,13 +34,13 @@ export const Banner = () => {
                             <a href="https://github.com/maferfan?tab=repositories" className='hover:text-gray-500 transition-all duration-300'>My Portfolio</a>
                         </motion.div>
                         <motion.div variants={fadeIn('up', 0.5)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.7 }} className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
-                            <a href="https://github.com/maferfan" target='_blank' className='hover:text-gray-500 transition-all duration-300'>
+                            <a href="https://github.com/maferfan" target='_blank' rel="noreferrer" className='hover:text-gray-500 transition-all duration-300'>
                                 <FaGithub />
                             </a>
-                            <a href="https://www.linkedin.com/in/matheus-ferrazza-52138219b/" target='_blank' className='hover:text-gray-500 transition-all duration-300'>
+                            <a href="https://www.linkedin.com/in/matheus-ferrazza-52138219b/" target='_blank' rel="noreferrer" className='hover:text-gray-500 transition-all duration-300'>
                                 <FaLinkedin />
                             </a>
-                            <a href="https://www.instagram.com/ferrazzam_/" target='_blank' className='hover:text-gray-500 transition-all duration-300'>
+                            <a href="https://www.instagram.com/ferrazzam_/" target='_blank' rel="noreferrer" className='hover:text-gray-500 transition-all duration-300'>
                                 <FaInstagram />
                             </a>
                         </motion.div>

@@ -1,4 +1,4 @@
-import { SkillObjectType, skillsObject } from "./skills";
+import {skillsObject } from "./skills";
 import imageProject1 from '../assets/projects/IMC.png'
 import imageProject2 from '../assets/projects/bibliotech.png'
 import imageProject3 from '../assets/projects/memoryGame.png'
