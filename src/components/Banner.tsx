@@ -13,7 +13,7 @@ import { RotatingLines } from 'react-loader-spinner'
 
 export const Banner = () => {
     const [loader, setLoader] = useState<boolean>(false)
-    const PDF = "http://localhost:3000/Currículo-Matheus-ATUAL.pdf"
+    const PDF = "https://maferfan.github.io/site/Currículo-Matheus-ATUAL.pdf"
     const downloadPDF = (url: string) => {
         setLoader(true)
         const filename = url.split('/').pop()
