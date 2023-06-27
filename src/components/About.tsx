@@ -15,11 +15,11 @@ export const About = () => {
                         <img src={image} alt="" className="w-full h-full object-cover transform opacity-70" />
                     </div>
                     <div className="p-4 w-full flex-1 flex flex-col text-justify items-center">
-                        <h2 className="text-bold font-primary text-2xl mb-4 lg:text-[35px]">About me</h2>
-                        <h3 className="mb-4 lg:text-[26px] font-secondary text-center">I'm a Engineer and Fullstack Developer with 4 months of experience.</h3>
+                        <h2 className="text-bold font-primary text-2xl mb-4 lg:text-[35px]">Sobre mim</h2>
+                        <h3 className="mb-4 lg:text-[26px] font-secondary text-center">Seja muito bem vindo em meu site.</h3>
                         <p className="mb-6 max-w-lg lg:text-[20px] font-secondary">
-                            Hello, I'm Matheus. I'm From Rio Grande do Sul, living in Joinville - SC and I'm 24 years old.
-                            Biochemical engineer in career transition because  I love the creative  world of development and each day that passes this feeling grows.
+                            Olá, sou o Matheus. Sou do Rio Grande do Sul, morando em Joinville - SC e tenho 24 anos.
+                            Engenheiro Bioquímico em transição de carreira porque amo o mundo do desenvolvimento e cada dia que passa esse sentimento cresce.
                         </p>
                         <div className="flex gap-x-6 lg:gap-x-10 text-center">
                             <div>
@@ -30,7 +30,7 @@ export const About = () => {
                                             null}
                                 </div>
                                 <div className="text-sm tracking-[2px]">
-                                    Months of <br /> experience
+                                    Meses de <br /> experiência
                                 </div>
                             </div>
                             <div>
@@ -41,7 +41,7 @@ export const About = () => {
                                             null}
                                 </div>
                                 <div className="text-sm tracking-[2px]">
-                                    Projects <br /> completed
+                                    Projectos <br /> completos
                                 </div>
                             </div>
                             <div>
@@ -53,7 +53,7 @@ export const About = () => {
                                     +
                                 </div>
                                 <div className="text-sm tracking-[2px]">
-                                    Hours <br /> developing
+                                    Horas de <br /> desenvolvimento
                                 </div>
                             </div>
                         </div>

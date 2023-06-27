@@ -22,21 +22,21 @@ type ProjectsType = {
 export const projects: ProjectsType[] = [
     {
         image: imageProject1,
-        title: "IMC calculator",
+        title: "Calculadora de IMC",
         link: "https://github.com/maferfan/Projetos/tree/main/react-calculator",
         isFinished: true,
         skills: [skillsObject["html"], skillsObject["css"], skillsObject["js"]]
     },
     {
         image: imageProject2,
-        title: "Bibliotech",
+        title: "Biblioteca",
         link: "https://github.com/maferfan/Projetos/tree/main/bibliotech-project",
         isFinished: true,
         skills: [skillsObject["html"], skillsObject["css"], skillsObject["js"], skillsObject["bootstrap"], skillsObject["firebase"]]
     },
     {
         image: imageProject3,
-        title: "Memory Game",
+        title: "Jogo da memória",
         link: "https://github.com/maferfan/Projetos/tree/main/memory-game",
         isFinished: true,
         skills: [skillsObject["html"], skillsObject["css"], skillsObject["ts"]]
@@ -50,7 +50,7 @@ export const projects: ProjectsType[] = [
     },
     {
         image: imageProject5,
-        title: "Virtual Assistant",
+        title: "Assistente Virtual",
         link: "https://github.com/maferfan/Projetos/tree/main/Assistente%20virtual",
         isFinished: true,
         skills: [skillsObject["py"]]

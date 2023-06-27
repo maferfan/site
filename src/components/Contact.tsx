@@ -41,8 +41,8 @@ export const Contact = () => {
                 <div className="flex flex-col lg:flex-row">
                     <motion.div variants={fadeIn('right', 0.3)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.3 }} className="flex-1 flex items-center">
                         <div>
-                            <h4 className="text-xl uppercase font-medium mb-2 tracking-wide">Get in touch</h4>
-                            <h2 className="text-[45px] lg-text-[90px] leading-none mb-12 text-neutral-600">Let's work <br />together!</h2>
+                            <h4 className="text-xl uppercase font-medium mb-2 tracking-wide">Entre em contato</h4>
+                            <h2 className="text-[45px] lg-text-[90px] leading-none mb-12 text-neutral-600">Vamos trabalhar <br />juntos!</h2>
                         </div>
                     </motion.div>
                     <motion.form variants={fadeIn('right', 0.3)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.3 }} className="flex-1 border rounded-2xl flex flex-col gap-y-6 pb-24 p-6">

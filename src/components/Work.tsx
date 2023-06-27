@@ -20,7 +20,7 @@ export const Work = () => {
         <div className="py-16 lg:py-8 lg:py-24 lg:flex lg:items-center btn2" id="work">
             <div className="container mx-auto">
                 <div className="flex flex-col items-center px-7 gap-y-10">
-                    <h1 className="text-center text-[50px]">Projects</h1>
+                    <h1 className="text-center text-[50px]">Projetos</h1>
                     <motion.div variants={fadeIn('right', 0.4)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.3 }} className=" xl:grid xl:grid-cols-3 xl:gap-x-28 xl:gap-y-6">
                         {projects.map((project, index) => {
                             return (

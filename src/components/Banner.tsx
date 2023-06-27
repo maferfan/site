@@ -4,12 +4,8 @@ import { motion } from 'framer-motion'
 import { fadeIn } from '../variants'
 import { BiLogoGmail } from 'react-icons/bi'
 import image from '../assets/imageMinha.jpg'
-import { useRef, useState } from 'react'
-import jsPDF from 'jspdf'
-import html2canvas from 'html2canvas'
+import { useState } from 'react'
 import { RotatingLines } from 'react-loader-spinner'
-
-
 
 export const Banner = () => {
     const [loader, setLoader] = useState<boolean>(false)
@@ -34,14 +30,14 @@ export const Banner = () => {
                 <div className='flex mx-auto flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-7'>
                     <div className='flex-1 text-center font-secondary lg:text-left'>
                         <motion.h1 variants={fadeIn('up', 0.3)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.7 }} className='text-[45px] font-bold leadind-[0.8] lg:text-[80px]'>
-                            Greetings,
+                            Saudações,
                         </motion.h1>
                         <motion.div variants={fadeIn('up', 0.3)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.7 }} className='mb-6 text-[36px] lg:text-[43px] font-semibold uppercase leading-[1]'>
-                            <span className='mr-4 text-neutral-600'>I am a</span>
+                            <span className='mr-4 text-neutral-600'>Eu sou um</span>
                             <TypeAnimation sequence={[
-                                'FullStack Developer',
+                                'Desenvolvedor Fullstack',
                                 2000,
-                                'Engineer',
+                                'Engenheiro',
                                 2000
                             ]}
                                 speed={50}
@@ -49,7 +45,7 @@ export const Banner = () => {
                                 repeat={Infinity}
                             />
                         </motion.div>
-                        <motion.p variants={fadeIn('up', 0.3)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.7 }} className='mb-8 mx-auto lg:mx-0 lg:text-[20px] font-secondary'> Here you will find information about me such as contacts and my projects.</motion.p>
+                        <motion.p variants={fadeIn('up', 0.3)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.7 }} className='mb-8 mx-auto lg:mx-0 lg:text-[20px] font-secondary'> Aqui você encontrará informações sobre mim como contatos e meus projetos.</motion.p>
                         <motion.div variants={fadeIn('up', 0.4)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.7 }} className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
                             <div className='text-gray-400'>
                                 <div className='flex items-center gap-x-2'>
@@ -63,7 +59,7 @@ export const Banner = () => {
                                             animationDuration="0.75"
                                             width="15"
                                             visible={true}/> Baixando</span> : <div className='flex items-center gap-x-2'><FaFilePdf /><span>
-                                    Curriculum</span></div>}</button>
+                                    Currículo</span></div>}</button>
                             </div>
                         </motion.div>
                         <motion.div variants={fadeIn('up', 0.5)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.7 }} className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
