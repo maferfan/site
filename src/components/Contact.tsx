@@ -30,13 +30,13 @@ export const Contact = () => {
         setMessage('');
 
         const encodedMessage = encodeURIComponent(newMessage.email && newMessage.name && newMessage.message &&`From: ${newMessage.name}\n\n${newMessage.message}\n\natt, ${newMessage.email}.`);
-        const whatsappUrl = `https://wa.me/47989025148?text=${encodedMessage}`;
+        const whatsappUrl = `https://wa.me/5547989025148?text=${encodedMessage}`;
 
         window.open(whatsappUrl);
     };
 
     return (
-        <div className="py-16 lg:py-8 lg:py-24 lg:h-screen lg:flex lg:items-center btn" id="contact">
+        <div className="py-16 lg:py-8  lg:h-screen lg:flex lg:items-center btn" id="contact">
             <div className="container mx-auto">
                 <div className="flex flex-col lg:flex-row">
                     <motion.div variants={fadeIn('right', 0.3)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.3 }} className="flex-1 flex items-center">
